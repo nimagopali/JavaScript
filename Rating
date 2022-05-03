@@ -1,0 +1,33 @@
+ function greaterThan(paramOne, paramTwo) {
+        if (paramTwo > paramOne) {
+          return true
+        } else {
+          return false
+        }
+      }
+
+      function getLength(strInput) {
+        return strInput.length
+      }
+
+      var myFavRestaurant = {
+        name: 'Bangkok Restaurant',
+        cuisineType: 'Thai',
+        rating: 4.5,
+        hasTakeout: true
+      }
+
+      var restaurants = [
+        { name: 'Nepali Restaurant', cuisineType: 'Nepali', rating: 4.4, hasTakeout: true },
+        { name: 'Indian Restaurant', cuisineType: 'Indian', rating: 4.1, hasTakeout: true },
+        { name: 'Thai Restaurant', cuisineType: 'Indian', rating: 4.3, hasTakeout: true }
+      ]
+
+      function loopThroughRestaurants(topRestaurants) {
+        for (let index = 0; index < topRestaurants.length; index++) {
+          const element = topRestaurants[index]
+          if (element.rating > 3) {
+            console.log(element.name)
+          }
+        }
+      }
